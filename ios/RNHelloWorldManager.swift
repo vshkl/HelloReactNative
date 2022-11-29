@@ -12,8 +12,6 @@ import React
 class RNHelloWorldManager : RCTViewManager {
   
   override func view() -> UIView! {
-    let label = UILabel()
-    label.text = "Hello World!"
-    return label
+    return HelloWorldView()
   }
 }

@@ -6,7 +6,7 @@ import HelloWorld from './HelloWorld'
 const App = () => {
   return (
     <View style={styles.container}>
-      <HelloWorld style={styles.helloWorld} />
+      <HelloWorld style={styles.helloWorld} addressee="Username" />
     </View>
   )
 }
@@ -16,9 +16,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 20,
   },
   helloWorld: {
-    width: 100,
+    width: '100%',
     height: 100,
   },
 })

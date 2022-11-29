@@ -10,6 +10,7 @@ import com.facebook.react.uimanager.ReactShadowNode
 import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewManager
+import com.facebook.react.uimanager.annotations.ReactProp
 
 object RNHelloWorld {
 
@@ -23,9 +24,15 @@ object RNHelloWorld {
 
     @SuppressLint("SetTextI18n")
     override fun createViewInstance(reactContext: ThemedReactContext): TextView {
-      return TextView(reactContext).apply {
-        text = "Hello World"
-      }
+      return TextView(reactContext)
+    }
+
+    @SuppressLint("SetTextI18n")
+    @ReactProp(name = "addressee")
+    fun setAddressee(textView: TextView, addressee: String) {
+      textView.text = if (addressee.isEmpty())
+        "Hello world!"
+        else "Hello $addressee!"
     }
   }
 
