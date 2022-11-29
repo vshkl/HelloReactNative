@@ -11,12 +11,12 @@ import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewManager
 
-object HelloWorld {
+object RNHelloWorld {
 
   class Manager : SimpleViewManager<TextView>() {
 
     private companion object {
-      const val REACT_NAME = "HelloWorld"
+      const val REACT_NAME = "RNHelloWorld"
     }
 
     override fun getName(): String = REACT_NAME

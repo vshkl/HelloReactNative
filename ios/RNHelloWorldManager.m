@@ -8,5 +8,5 @@
 #import <Foundation/Foundation.h>
 #import "React/RCTViewManager.h"
 
-@interface RCT_EXTERN_MODULE(HelloWorldManager, RCTViewManager)
+@interface RCT_EXTERN_MODULE(RNHelloWorldManager, RCTViewManager)
 @end

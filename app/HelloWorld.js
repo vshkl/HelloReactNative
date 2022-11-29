@@ -1,3 +1,3 @@
 import {requireNativeComponent} from 'react-native'
 
-module.exports = requireNativeComponent('HelloWorld')
+module.exports = requireNativeComponent('RNHelloWorld')

@@ -8,8 +8,8 @@
 import Foundation
 import React
 
-@objc(HelloWorldManager)
-class HelloWorldManager : RCTViewManager {
+@objc(RNHelloWorldManager)
+class RNHelloWorldManager : RCTViewManager {
   
   override func view() -> UIView! {
     let label = UILabel()
