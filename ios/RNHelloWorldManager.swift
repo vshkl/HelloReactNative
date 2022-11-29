@@ -11,6 +11,10 @@ import React
 @objc(RNHelloWorldManager)
 class RNHelloWorldManager : RCTViewManager {
   
+  override class func requiresMainQueueSetup() -> Bool {
+    true
+  }
+  
   override func view() -> UIView! {
     return HelloWorldView()
   }
